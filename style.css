@@ -175,6 +175,7 @@ ul.menu li:hover a{
     width:100%;
     overflow-x:hidden;
     height:400px;
+    position:relative;
 }
 
 .slide-show-area{
@@ -204,11 +205,10 @@ ul.menu li:hover a{
 
 .previous, .next{
     text-align: center;
-    position:relative;
-    bottom:50%;
-    display:inline-block;
     width:36px;
     height:36px;
+    position:absolute;
+    top:50%;
     line-height:33px;
     border-radius:17px;
     background-color:#E7D9EC;
@@ -220,6 +220,7 @@ ul.menu li:hover a{
 
 .previous:hover, .next:hover{
     opacity:0.6;
+
 }
 
 .previous{
@@ -227,13 +228,13 @@ ul.menu li:hover a{
 }
 
 .next{
-    left:calc(100vw - 100px);
+    right:10px;
 }
 
 .dots{
     display:flex;
-    position:relative;
-    bottom:70px;
+    position:absolute;
+    bottom:20px;
     left:50%;
 }
 
@@ -755,10 +756,6 @@ ul.menu li:hover a{
         font-size:25px;
     }
 
-    .next{
-        left:calc(100vw - 90px);
-    }
-
     .dot{
         width:10px;
         height:10px;
@@ -771,10 +768,6 @@ ul.menu li:hover a{
 @media (max-width:550px){
     .section3__image{
         height:250px;
-    }
-
-    .dots{
-        bottom:50px;
     }
 }
 
