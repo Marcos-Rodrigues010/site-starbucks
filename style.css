@@ -442,10 +442,6 @@ ul.menu li:hover a{
         padding-left: calc(100vw - 1440px);
         padding-right: calc(100vw - 1440px);
     }
-
-    .next{
-        left:1350px;
-    }
 }
 
 @media (max-width: 1360px){
